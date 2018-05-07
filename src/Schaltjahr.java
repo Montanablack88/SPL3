@@ -9,10 +9,21 @@ public class Schaltjahr {
 		// mit Funktionen
 		
 		
-		String eingabe = JOptionPane.showInputDialog("Geben Sie bitte ein Jahr ein!");
-		System.out.println("Das Jahr " + eingabe + " ist ein Schaltjahr");
+		int jahr = JOptionPane.showInputDialog("Geben Sie bitte ein Jahr ein!");
 		
 		
+		
+			
+		}
+		
+		
+	public static void istSchaltjahr(int Jahreszahl) {
+		if (Jahreszahl % 4 == 0) {
+			System.out.println(jahr + " ist kein Schaltjahr");
+			if(Jahreszahl % 100 != 0 || Jahreszahl % 400 == 0) {
+				System.out.println();
+			}
+		}
 	}
 
 }
